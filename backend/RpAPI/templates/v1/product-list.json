@@ -1,0 +1,26 @@
+{
+    "owner": {
+        "username": "donfack",
+        "id": 1,
+        "user_product": [
+            {
+                "url": "http://127.0.0.1:8000/api/1/detail",
+                "name": "tomates"
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/2/detail",
+                "name": "avocat"
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/3/detail",
+                "name": "mandarin"
+            }
+        ]
+    },
+    "url": "http://127.0.0.1:8000/api/1/detail",
+    "pk": 1,
+    "name": "tomates",
+    "content": "tomates",
+    "prix": "10000.00",
+    "my_discount": "5000.00"
+}

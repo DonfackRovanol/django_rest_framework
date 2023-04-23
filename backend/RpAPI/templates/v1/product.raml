@@ -1,0 +1,38 @@
+#%RAML 1.0
+---
+title: Ecommerce Digital Product
+baseUri: http://mon-ecom.com/api/{version}
+version: v1
+
+/product-b/ :
+  description: this api helps to manage (get, post, put, path, delete) product
+  get:
+    description: Get the list of product
+    headers: 
+      Content-Type: application/json
+    queryParameters: 
+      name:
+        description: name of the product
+        type: string
+        example: orange
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: !include product-list.json
+
+      404:
+        body: 
+          application/json:
+            example: |
+              {
+                'detail': "toto est malade"
+              }
+    
+      404:
+        body: 
+          application/json:
+            example: |
+              {
+                'detail': "Authentification credentials were not provided."
+              }
